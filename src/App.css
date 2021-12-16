@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,29 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  display: flex;
+  background-color: rgba(46, 56, 52, 0.5);
+  height: 100%;
 }
+
+.Profile {
+  position: relative;
+}
+
+.Headshot {
+  width: 10%;
+  margin: 80px;
+  /* border-radius: 20% 80% 57% 43% / 20% 37% 63% 80%; */
+  border-radius: 50%;
+  /* border-radius: 49% 51% 47% 53% / 24% 25% 75% 76%  */
+}
+
+
+
+.Main {
+  height: 800px;
+}
+
