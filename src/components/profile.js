@@ -1,5 +1,5 @@
 import React from 'react'
-import Headshot from './images/headshot.jpg'
+import Headshot from './images/Headshot.jpg'
 
 function Profile () {
   
