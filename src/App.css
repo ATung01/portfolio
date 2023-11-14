@@ -7,18 +7,18 @@ body {
 }
 
 .app {
-  background-color: rgb(30,29,43);
+  background-color: rgba(0, 0, 0, 0.892);
 }
 
-/* .navbar {
-  background-color: #333;
-  color: white;
+.navbar {
+  background-color: rgb(28,28,28);
+  /* color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0.5rem 1rem;
-} */
+  padding: 0.5rem 1rem; */
+}
 
 /* .site-title {
   font-size: 2rem;
@@ -39,7 +39,10 @@ body {
 
 
 .Profile {
-  position: relative;
+  display: flex;
+  height: auto;
+  justify-content: right;
+
 }
 
 .Headshot {
@@ -51,6 +54,6 @@ body {
 }
 
 .Main {
-  height: 800px;
+  height: 1080px;
 }
 

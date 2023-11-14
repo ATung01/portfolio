@@ -1,48 +1,59 @@
 import React from 'react'
 import styled from 'styled-components'
+import Logo from './images/Logo.svg'
 
 const Nav = styled.div`
-  background-color: #333;
+  // background-color: #333;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
+  font-size: 1.25rem;
 
   .site-title {
+    display: flex;
     font-size: 2rem;
+    align-items: center;
+    width: 75px;
+    position: absolute;
+    left: 0px;
   }
 
   ul {
-    padding: 0;
-    margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
   }
 
   a {
     color:inherit;
     text-decoration: none;
   }
-  
+
+  img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }  
 `
 function Navbar() {
-
-
 
   return(
     <Nav className="navbar">
       <a href='/' className='site-title'>
-        Alex Tung
+        <img src={Logo}></img>
       </a>
       <ul>
         <li>
           <a href='/about'>About</a>
         </li>
         <li>
-          <a href='/blah'>blah</a>
+          <a href='/skills'>Skills</a>
+        </li>
+        <li>
+          <a href='/experience'>Experience</a>
         </li>
       </ul>
     </Nav>
