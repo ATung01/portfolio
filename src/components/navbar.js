@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from './images/Logo.svg'
-import { useMediaQuery } from 'react-responsive'
 
 
 const Nav = styled.div`

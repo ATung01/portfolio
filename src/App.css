@@ -15,7 +15,14 @@ body {
   display: flex;
   height: auto;
   justify-content: right;
+}
 
+.Profile h2 {
+  color:white;
+}
+
+.Profile p {
+  color: white;
 }
 
 .Headshot {
