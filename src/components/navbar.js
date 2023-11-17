@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from './images/Logo.svg'
+import { useMediaQuery } from 'react-responsive'
+
 
 const Nav = styled.div`
-  // background-color: #333;
+  background-color: rgb(28,28,28);
   color: white;
   display: flex;
   justify-content: center;
@@ -24,7 +26,7 @@ const Nav = styled.div`
   ul {
     list-style: none;
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   a {
@@ -62,7 +64,6 @@ function Navbar() {
           <a href='/projects'>Projects</a>
         </li>
       </ul>
-      <button>Github</button>
     </Nav>
   )
 }
