@@ -1,32 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from './images/Logo.svg'
+import NavButton from './navButton'
 import { useMediaQuery } from 'react-responsive'
+
 
 
 const Nav = styled.div`
 background-color: rgb(28,28,28);
 color: white;
 display: flex;
-justify-content: center;
+// justify-content: center;
 align-items: center;
 gap: 2rem;
 padding: 0 1rem;
 font-size: 1.25rem;
 
-.site-title {
-  display: flex;
-  font-size: 2rem;
-  align-items: center;
-  width: 75px;
+logo-container {
   position: absolute;
-  left: 0px;
+  left: 0;
+  top: 0;
 }
 
 ul {
   list-style: none;
   display: flex;
   gap: 3rem;
+  margin: 0;
 }
 
 a {
@@ -37,9 +37,25 @@ a {
 img {
   padding: 0;
   margin: 0;
-  width: 100%;
-}  
+  width: 75px;
+}`
+
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
 `
+
+// const SiteLogo = styled.div`
+// .site-logo {
+//   display: inline-block;
+//   width: 75px;
+//   // position: absolute;
+//   left: 0px;
+//   img {
+//     width: 100%;
+//   }
+// }`
+
 const Links = [
   'About', 'Skills', 'Experience', 'Education', 'Projects'
 ]
@@ -48,30 +64,21 @@ function Navbar() {
   const isNonMobile = useMediaQuery({ minWidth: 768})
   
   return(
-    isNonMobile && (
-      <Nav className="navbar">
-        <a href='/' className='site-title'>
-          <img src={Logo} alt='Logo'></img>
-        </a>
+    <Nav>
+      <LogoContainer>
+        <img src={Logo} alt='Logo' />
+      </LogoContainer>
+      {isNonMobile && (
         <ul>
-          <li>
-            <a href='/about'>{Links[0]}</a>
-          </li>
-          <li>
-            <a href='/skills'>{Links[1]}</a>
-          </li>
-          <li>
-            <a href='/experience'>{Links[2]}</a>
-          </li>
-          <li>
-            <a href='/education'>{Links[3]}</a>
-          </li>
-          <li>
-            <a href='/projects'>{Links[4]}</a>
-          </li>
+          {Links.map((link, index) => (
+            <li key={link}>
+              <a href={`/${link.toLowerCase()}`}>{link}</a>
+            </li>
+          ))}
         </ul>
-      </Nav> 
-    )
-  )
+      )}
+      {!isNonMobile && <NavButton />}
+    </Nav>
+  );
 }
 export default Navbar
