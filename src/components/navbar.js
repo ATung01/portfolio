@@ -10,23 +10,16 @@ const Nav = styled.div`
 background-color: rgb(28,28,28);
 color: white;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 gap: 2rem;
 padding: 0 1rem;
 font-size: 1.25rem;
 
-logo-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 ul {
   list-style: none;
   display: flex;
   gap: 3rem;
-  // margin: 0;
 }
 
 a {
@@ -41,8 +34,11 @@ img {
 }`
 
 const LogoContainer = styled.div`
-  display: flex;
-  align-items: center;
+width: 75px;
+position: absolute;
+img {
+  width: 100%;
+}
 `
 
 const Links = [
@@ -53,21 +49,23 @@ function Navbar() {
   const isNonMobile = useMediaQuery({ minWidth: 768})
   
   return(
-    <Nav>
+    <div>
       <LogoContainer>
         <img src={Logo} alt='Logo' />
       </LogoContainer>
-      {isNonMobile && (
-        <ul>
-          {Links.map((link, index) => (
-            <li key={link}>
-              <a href={`/${link.toLowerCase()}`}>{link}</a>
-            </li>
-          ))}
-        </ul>
-      )}
+      <Nav>
+        {isNonMobile && (
+          <ul>
+            {Links.map((link, index) => (
+              <li key={link}>
+                <a href={`/${link.toLowerCase()}`}>{link}</a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </Nav>
       {!isNonMobile && <NavButton links={Links}/>}
-    </Nav>
+    </div>
   );
 }
 export default Navbar
