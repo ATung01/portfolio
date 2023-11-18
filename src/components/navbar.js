@@ -43,21 +43,7 @@ img {
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
 `
-
-// const SiteLogo = styled.div`
-// .site-logo {
-//   display: inline-block;
-//   width: 75px;
-//   // position: absolute;
-//   left: 0px;
-//   img {
-//     width: 100%;
-//   }
-// }`
 
 const Links = [
   'About', 'Skills', 'Experience', 'Education', 'Projects'
@@ -80,7 +66,7 @@ function Navbar() {
           ))}
         </ul>
       )}
-      {!isNonMobile && <NavButton />}
+      {!isNonMobile && <NavButton links={Links}/>}
     </Nav>
   );
 }
