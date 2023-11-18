@@ -10,7 +10,7 @@ const Nav = styled.div`
 background-color: rgb(28,28,28);
 color: white;
 display: flex;
-// justify-content: center;
+justify-content: space-between;
 align-items: center;
 gap: 2rem;
 padding: 0 1rem;
@@ -26,7 +26,7 @@ ul {
   list-style: none;
   display: flex;
   gap: 3rem;
-  margin: 0;
+  // margin: 0;
 }
 
 a {
@@ -43,6 +43,9 @@ img {
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
 `
 
 // const SiteLogo = styled.div`
