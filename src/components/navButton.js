@@ -8,6 +8,7 @@ const Container = styled.div`
 position: relative;
 height: 75px;
 width: 100%;
+border-bottom: solid rgb(184,225,243);
 display: flex;
 align-items: center;
 justify-content: flex-end;
@@ -28,7 +29,7 @@ flex-direction: column;
 li {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: transparent;
 }
 li:hover {
   background-color: lightgray;
@@ -36,9 +37,9 @@ li:hover {
 li a {
   width: 100%;
   text-align: left;
-  background: none;
-  color: black;
-  border: none;
+  background: rgba(0, 0, 0, 0.892);
+  border: solid;
+  color: white;
   padding: 5px;
   margin: 0;
   font: inherit;

@@ -12,6 +12,7 @@ color: white;
 display: flex;
 justify-content: center;
 align-items: center;
+border-bottom: solid rgb(184,225,243);
 height: 75px;
 gap: 2rem;
 padding: 0 1rem;
@@ -24,7 +25,8 @@ ul {
 }
 
 .siteLinks {
-  color: rgb(184,225,243);
+  // color: rgb(184,225,243);
+  color: white;
 }
 
 a {
