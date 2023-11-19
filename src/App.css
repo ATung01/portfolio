@@ -20,23 +20,14 @@ body {
 .profile .profileContainer {
   display: flex;
   height: auto;
-  width: 80%;
+  width: 65%;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column-reverse; */
-  /* @media (max-width: 768) {
-    flex-direction: column;
-  } */
-}
-
-@media (max-width: 768px) {
-  .profile .profileContainer {
-    flex-direction: column-reverse;
-  }
 }
 
 .profile .profileContainer .intro {
   flex-direction: column;
+  margin: 2rem;
 }
 
 .profile h2 {
@@ -45,10 +36,11 @@ body {
 
 .profile p {
   color: white;
+  width: 80%;
 }
 
 .Headshot {
-  width: 16rem;
+  width: 18rem;
   margin: 4rem auto;
   /* border-radius: 20% 80% 57% 43% / 20% 37% 63% 80%; */
   border-radius: 50%;
@@ -59,3 +51,20 @@ body {
   height: 1080px;
 }
 
+@media (max-width: 768px) {
+  .profile .profileContainer {
+    flex-direction: column-reverse;
+  }
+  .profile .profileContainer .Headshot {
+    margin: 0;
+  }
+}
+
+@media (max-width: 319px) {
+  .profile .profileContainer .Headshot {
+    width: 8rem;
+  }
+  .profile p {
+    width: 100%;
+  }
+}
