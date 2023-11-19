@@ -67,7 +67,7 @@ function NavButton({links}) {
           {open ? (
             <Menu>
               {links.map((link, index) => (
-                <li key={link}>
+                <li key={link} >
                   <a href={`/${link.toLowerCase()}`}>{link}</a>
                 </li>
               ))}

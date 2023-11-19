@@ -12,6 +12,7 @@ color: white;
 display: flex;
 justify-content: center;
 align-items: center;
+height: 75px;
 gap: 2rem;
 padding: 0 1rem;
 font-size: 1.25rem;
@@ -20,6 +21,10 @@ ul {
   list-style: none;
   display: flex;
   gap: 3rem;
+}
+
+.siteLinks {
+  color: rgb(184,225,243);
 }
 
 a {
@@ -53,17 +58,15 @@ function Navbar() {
       <LogoContainer>
         <img src={Logo} alt='Logo' />
       </LogoContainer>
-      <Nav>
-        {isNonMobile && (
+        {isNonMobile && <Nav>
           <ul>
             {Links.map((link, index) => (
-              <li key={link}>
+              <li key={link} className="siteLinks">
                 <a href={`/${link.toLowerCase()}`}>{link}</a>
               </li>
             ))}
           </ul>
-        )}
-      </Nav>
+         </Nav>}
       {!isNonMobile && <NavButton links={Links}/>}
     </div>
   );

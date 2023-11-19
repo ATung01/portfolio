@@ -11,23 +11,45 @@ body {
 }
 
 
-.Profile {
+.profile {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile .profileContainer {
   display: flex;
   height: auto;
-  justify-content: right;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column-reverse; */
+  /* @media (max-width: 768) {
+    flex-direction: column;
+  } */
 }
 
-.Profile h2 {
-  color:white;
+@media (max-width: 768px) {
+  .profile .profileContainer {
+    flex-direction: column-reverse;
+  }
 }
 
-.Profile p {
+.profile .profileContainer .intro {
+  flex-direction: column;
+}
+
+.profile h2 {
+  color:rgb(105,108,153);
+}
+
+.profile p {
   color: white;
 }
 
 .Headshot {
   width: 16rem;
-  margin: 80px;
+  margin: 4rem auto;
   /* border-radius: 20% 80% 57% 43% / 20% 37% 63% 80%; */
   border-radius: 50%;
   /* border-radius: 49% 51% 47% 53% / 24% 25% 75% 76%  */
