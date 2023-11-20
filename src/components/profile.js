@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Hero = styled.div`
 width:100%;
-height:800px;
+height:600px;
 display: flex;
 justify-content: center;
 align-items: flex-start;
@@ -23,7 +23,7 @@ align-items: flex-start;
 }
 
 h1 {
-  color:rgb(105,108,153);
+  color:${props => props.theme.secondary};
 }
 p {
   color: white;
@@ -35,7 +35,17 @@ p {
   border-radius: 50%;
 }
 
+.github {
+  background-color: ${props => props.theme.secondary};
+  color: white;
+  border-radius:10px;
+  padding: 15px;
+  min-height:30px; 
+  min-width: 150px;
+}
+
 @media (max-width: 768px) {
+  height: 800px;
   .profileContainer {
     flex-direction: column-reverse;
   }
@@ -45,6 +55,7 @@ p {
 }
 
 @media (max-width: 319px) {
+  height: 900px;
   .profileContainer .headshot {
     width: 8rem;
   }
@@ -55,6 +66,7 @@ p {
 
 `
 
+
 function Profile () {
   
   return (
@@ -64,7 +76,7 @@ function Profile () {
           <h1>Hey, I'm Alex Tung</h1>
           <p>I'm a Full Stack Developer with a non traditional background and a 
           passion for making cool stuff. Go check out what I've made at my Github or you can just explore my site.</p>
-          <button>Github Profile</button>
+          <button className='github'>Github Profile</button>
         </div>
         <img className="headshot" src={Headshot}></img>
       </div>

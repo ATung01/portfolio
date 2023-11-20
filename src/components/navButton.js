@@ -8,7 +8,7 @@ const Container = styled.div`
 position: relative;
 height: 75px;
 width: 100%;
-border-bottom: solid rgb(184,225,243);
+border-bottom: solid ${props => props.theme.primary};
 display: flex;
 align-items: center;
 justify-content: flex-end;
@@ -17,8 +17,8 @@ color: white;
 `
 const Menu = styled.ul`
 position: absolute;
-right: 100px;
-top: 0px;
+right: 0px;
+top: 73px;
 list-style-type: none;
 margin: 0;
 padding: 0;
@@ -37,8 +37,8 @@ li:hover {
 li a {
   width: 100%;
   text-align: left;
-  background: rgba(0, 0, 0, 0.892);
-  border: solid;
+  background: ${(props) => props.theme.bg};
+  border: solid 1px;
   color: white;
   padding: 5px;
   margin: 0;

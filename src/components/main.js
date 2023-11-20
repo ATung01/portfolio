@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from './navbar'
 import Profile from './profile'
-// import { useMediaQuery } from 'react-responsive'
-
+import Skills from './skills'
 
 function Main() {
-  // const isNonMobile = useMediaQuery({ minWidth: 768})
-  // const isMobile = useMediaQuery({ maxWidth: 767})
 
   return (
     <div className="Main">
       <Navbar/>
       <Profile></Profile>
+      <Skills></Skills>
     </div>
   ) 
 }

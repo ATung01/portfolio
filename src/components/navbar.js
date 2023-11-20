@@ -7,12 +7,12 @@ import { useMediaQuery } from 'react-responsive'
 
 
 const Nav = styled.div`
-background-color: rgb(28,28,28);
 color: white;
 display: flex;
 justify-content: center;
 align-items: center;
-border-bottom: solid rgb(184,225,243);
+border-bottom: solid ${props => props.theme.primary};
+
 height: 75px;
 gap: 2rem;
 padding: 0 1rem;
@@ -21,11 +21,10 @@ font-size: 1.25rem;
 ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .siteLinks {
-  // color: rgb(184,225,243);
   color: white;
 }
 
