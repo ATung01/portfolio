@@ -3,8 +3,9 @@ import styled from "styled-components"
 
 const Container = styled.div`
 border: solid 3px white;
-height: 500px;
-width: 300px;
+height: 300px;
+width: 80%;
+min-width: 200px;
 margin: 16px;
 display: flex;
 flex-direction: column;
@@ -25,9 +26,9 @@ width: 100%;
 color: white;
 `
 
-function Card({title = 'title', content = 'content'}) {
+function Card({title = 'title', content = 'content', className}) {
   return (
-    <Container>
+    <Container className={className}>
       <Title >{title}</Title>
       <Content >{content}</Content>
     </Container>

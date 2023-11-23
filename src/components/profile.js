@@ -23,7 +23,7 @@ align-items: flex-start;
 }
 
 h1 {
-  color:${props => props.theme.secondary};
+  color:${props => props.theme.primary};
 }
 p {
   color: white;
@@ -42,6 +42,8 @@ p {
   padding: 15px;
   min-height:30px; 
   min-width: 150px;
+  width:200px;
+  margin-top: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -76,7 +78,7 @@ function Profile () {
           <h1>Hey, I'm Alex Tung</h1>
           <p>I'm a Full Stack Developer with a non traditional background and a 
           passion for making cool stuff. Go check out what I've made at my Github or you can just explore my site.</p>
-          <button className='github'>Github Profile</button>
+          <button className='github'>Go to Github</button>
         </div>
         <img className="headshot" src={Headshot}></img>
       </div>
