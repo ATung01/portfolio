@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
-border: solid 3px white;
+border: solid 4px ${props => props.theme.primary};
 min-height: 500px;
 width: 80%;
 min-width: 200px;
@@ -23,7 +23,7 @@ const Content = styled.div`
 display: flex;
 justify-content: center;
 width: 100%;
-height:100%;
+height: 100%;
 padding: 1rem;
 color: white;
 `

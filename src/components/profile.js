@@ -41,13 +41,13 @@ p {
   border-radius:10px;
   padding: 15px;
   min-height:30px; 
-  min-width: 150px;
+  // min-width: 150px;
   width:200px;
   margin-top: 5rem;
 }
 
 @media (max-width: 768px) {
-  height: 800px;
+  height: 850px;
   .profileContainer {
     flex-direction: column-reverse;
   }
@@ -57,7 +57,7 @@ p {
 }
 
 @media (max-width: 319px) {
-  height: 900px;
+  height: 700px;
   .profileContainer .headshot {
     width: 8rem;
   }
