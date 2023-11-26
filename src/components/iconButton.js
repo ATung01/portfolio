@@ -27,6 +27,7 @@ align-items: center;
 justify-content: space-between;
 gap: 1rem;
 border-radius: 25px;
+margin: 2px;
 
 svg {
   height: 25px;

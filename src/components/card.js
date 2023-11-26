@@ -21,8 +21,8 @@ color: white;
 `
 
 const Content = styled.div`
-display: flex;
-justify-content: center;
+// display: flex;
+// justify-content: center;
 width: 100%;
 height: 100%;
 padding: 1rem;
@@ -32,8 +32,8 @@ color: white;
 function Card({title = 'title', content = 'content', className}) {
   return (
     <Container className={className}>
-      <Title >{title}</Title>
-      <Content >{content}</Content>
+      <Title className="Title">{title}</Title>
+      <Content className="Content">{content}</Content>
     </Container>
   )
 }

@@ -25,9 +25,11 @@ align-items: flex-start;
 
 h1 {
   color:${props => props.theme.primary};
+  font-size: 2.5rem;
 }
 p {
   color: white;
+  font-size: 1.2rem;
 }
 
 .headshot {
@@ -48,7 +50,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  height: 850px;
+  height: 1000px;
   .profileContainer {
     flex-direction: column-reverse;
   }
@@ -57,8 +59,8 @@ p {
   }
 }
 
-@media (max-width: 319px) {
-  height: 700px;
+@media (max-width: 320px) {
+  height: 800px;
   .profileContainer .headshot {
     width: 8rem;
   }
