@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
-border: solid 4px ${props => props.theme.primary};
+border: solid 4px ${props => props.theme.secondary};
 min-height: 200px;
 width: 80%;
 min-width: 200px;
@@ -16,6 +16,7 @@ display: flex;
 padding: 1rem 1rem 0 1rem;
 margin: 0;
 justify-content: center;
+// color: ${props => props.theme.primary};
 color: white;
 `
 

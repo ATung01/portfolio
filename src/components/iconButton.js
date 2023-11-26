@@ -19,7 +19,9 @@ const ButtonContainer = styled.div`
 height: 3rem;
 width: fit-content;
 padding: 5px 15px;
-border: 2px solid red;
+border: 2px solid ${props => props.theme.secondary};
+// color: ${props => props.theme.primary};
+color: white;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -27,7 +29,10 @@ gap: 1rem;
 border-radius: 25px;
 
 svg {
-  height:40px;
+  height: 25px;
+}
+img {
+  height: 25px;
 }
 `
 

@@ -58,12 +58,12 @@ function Skills() {
           <SkillsText>Skills</SkillsText>
         </Container>
         <CardBLock>
-          <SkillCard 
-            title={ListofSkills[0].title} 
-            content={<IconButton list={ListofSkills[0]} />}>
-          </SkillCard>
-          <SkillCard></SkillCard>
-          <SkillCard></SkillCard>
+          {ListofSkills.map((skill) => {
+            return <SkillCard 
+              title={skill.title}
+              content={<IconButton list={skill}/>}>
+            </SkillCard>
+          })}
         </CardBLock>
       </Wrapper>
     </div>
