@@ -59,8 +59,8 @@ function Skills() {
         </Container>
         <CardBLock>
           <SkillCard 
-            title="Test" 
-            content={<IconButton list={ListofSkills} />}>
+            title={ListofSkills[0].title} 
+            content={<IconButton list={ListofSkills[0]} />}>
           </SkillCard>
           <SkillCard></SkillCard>
           <SkillCard></SkillCard>

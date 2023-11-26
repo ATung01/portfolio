@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
 border: solid 4px ${props => props.theme.primary};
-min-height: 500px;
+min-height: 200px;
 width: 80%;
 min-width: 200px;
 margin: 16px;

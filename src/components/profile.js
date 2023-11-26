@@ -15,6 +15,7 @@ align-items: flex-start;
   width: 65%;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .profileContainer .intro {
@@ -80,7 +81,7 @@ function Profile () {
           passion for making cool stuff. Go check out what I've made at my Github or you can just explore my site.</p>
           <button className='github'>Go to Github</button>
         </div>
-        <img className="headshot" src={Headshot}></img>
+        <img className="headshot" alt='Headshot' src={Headshot}></img>
       </div>
     </Hero>
   )
