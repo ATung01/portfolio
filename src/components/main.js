@@ -4,6 +4,7 @@ import Profile from './profile'
 import Skills from './skills'
 import Experience from './experience'
 import Education from './education'
+import Projects from './projects'
 
 function Main() {
 
@@ -14,6 +15,7 @@ function Main() {
       <Skills></Skills>
       <Experience></Experience>
       <Education></Education>
+      <Projects></Projects>
     </div>
   ) 
 }

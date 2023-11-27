@@ -3,9 +3,12 @@ import styled from "styled-components"
 
 const Wrapper = styled.div`
 height: 900px;
+background-image: linear-gradient(to left top, #000000, #271c22, #433343, #5b4d6c, #696c99);
 h2 {
   text-align: center;
-  color: ${props => props.theme.primary}
+  font-size: 2rem;
+  margin-top: 0;
+  color: ${props => props.theme.primary};
 }
 `
 

@@ -30,6 +30,9 @@ h1 {
 p {
   color: white;
   font-size: 1.2rem;
+  a {
+    color:${props => props.theme.primary};
+  }
 }
 
 .headshot {
@@ -80,8 +83,12 @@ function Profile () {
         <div className='intro'>
           <h1>Hey, I'm Alex Tung</h1>
           <p>I'm a Full Stack Developer with a non traditional background and a 
-          passion for making cool stuff. Go check out what I've made at my Github or you can just explore my site.</p>
-          <button className='github'>Go to Github</button>
+          passion for making cool stuff. Go check out what I've made at my Github or you can just explore my site.
+          You can also contact me at{' '}
+            <a href="mailto:Acc.tung@gmail.com">Acc.tung@gmail.com</a>.</p>
+          <button className='github' onClick={() => window.open('https://github.com/atung01', '_blank')}>
+            Go to Github
+          </button>
         </div>
         <img className="headshot" alt='Headshot' src={Headshot}></img>
       </div>
