@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
-height: 1200px;
+height: 100%;
 background-color: ${props => props.theme.bg};
 h2 {
   color: ${props => props.theme.primary};
@@ -19,7 +20,7 @@ div.container {
 const Card = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 1fr 30px 1fr 1fr;
+grid-template-rows: 1fr 10px 1fr 1fr;
 height: auto;
 border-top: solid 4px ${props => props.theme.primary};
 border-bottom: solid 4px ${props => props.theme.primary};
@@ -30,8 +31,8 @@ color: white;
 width: 100%;
 img {
   grid-column: 5;
-  grid-row: 1 / 5;
-  height: 200px;
+  grid-row: 1 / 6;
+  height: 175px;
   width: auto;
   @media (max-width: 768px) {
     height: 75px;
@@ -46,15 +47,24 @@ const Content = styled.div`
 grid-column: 1 / 5;
 grid-row: 3 / 5;
 white-space: pre-line;
+font-size: 1.2rem;
+padding: 1rem;
+margin-top: -20px;
+@media (max-width: 768px) {
+  grid-column: 1 / 6;
+}
 `
 const Spacer = styled.div`
 height: 200px;
 `
 
 function Experience() {
+  const tooSmall = useMediaQuery({ minWidth: 350})
+
   return (
     <Wrapper>
       <h2>Experience</h2>
+      <Spacer></Spacer>
       <div className="container">
         <Card>
           <Title>Digidems - Digital Consultant / Web Developer</Title>
@@ -68,7 +78,16 @@ function Experience() {
           <img src="https://images.squarespace-cdn.com/content/v1/5e3386fca1edc769087962a9/9ecf767e-ef8e-4517-b7a5-9dcfdf39f227/DigiDems-Primary+-+Vertical-main.png" alt="Digidem Logo"></img>
         </Card>
         <Spacer></Spacer>
-        <Card></Card>
+        <Card>
+          <Title>Oppenheimer - Client Service Associate</Title>
+          <Content>
+            - Managed an existing base of thousands of accounts for 7-national in-house branches.{'\n'}
+            - Communicated with financial advisers and external money managers to facilitate trading.{'\n'}
+            - Developed relationships and learned the various personal needs of individuals in order to better manage expectation levels at all parts of the process when bringing in new business.
+          </Content>
+          {tooSmall && <img src="https://fif.com/media/com_mtree/images/listings/o/69.jpg" alt="Oppenheimer logo" className="Oppenheimer"></img>}
+        </Card>
+        <Spacer></Spacer>
       </div>
     </Wrapper>
   )

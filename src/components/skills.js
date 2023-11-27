@@ -63,10 +63,12 @@ function Skills() {
           <SkillsText>Skills</SkillsText>
         </Container>
         <CardBLock>
-          {ListofSkills.map((skill) => {
+          {ListofSkills.map((skill, index) => {
             return <SkillCard 
+              key={index}
               title={skill.title}
-              content={<IconButton list={skill}/>}>
+              content={<IconButton list={skill}
+              />}>
             </SkillCard>
           })}
         </CardBLock>
