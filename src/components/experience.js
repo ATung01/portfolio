@@ -1,10 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
 height: 100%;
-background-color: ${props => props.theme.bg};
+// background-color: ${props => props.theme.bg};
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.12) 012%, rgba(3,3,3,0.89) 100%);
 h2 {
   color: ${props => props.theme.primary};
   margin-top: 0;
@@ -59,7 +61,6 @@ height: 200px;
 `
 
 function Experience() {
-  const tooSmall = useMediaQuery({ minWidth: 350})
 
   return (
     <Wrapper>
@@ -85,7 +86,6 @@ function Experience() {
             - Communicated with financial advisers and external money managers to facilitate trading.{'\n'}
             - Developed relationships and learned the various personal needs of individuals in order to better manage expectation levels at all parts of the process when bringing in new business.
           </Content>
-          {tooSmall && <img src="https://fif.com/media/com_mtree/images/listings/o/69.jpg" alt="Oppenheimer logo" className="Oppenheimer"></img>}
         </Card>
         <Spacer></Spacer>
       </div>

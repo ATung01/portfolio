@@ -3,6 +3,7 @@ import Navbar from './navbar'
 import Profile from './profile'
 import Skills from './skills'
 import Experience from './experience'
+import Education from './education'
 
 function Main() {
 
@@ -12,6 +13,7 @@ function Main() {
       <Profile></Profile>
       <Skills></Skills>
       <Experience></Experience>
+      <Education></Education>
     </div>
   ) 
 }
