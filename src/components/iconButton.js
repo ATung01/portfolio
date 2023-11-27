@@ -43,10 +43,8 @@ function IconButton({list}, className) {
 
   return (
     <Wrapper className={className}>
-      {console.log(list.skills)}
       {list.skills.map((skill) => {
-        return <ButtonContainer>
-          {console.log(skill)}
+        return <ButtonContainer key={skill.name}>
           {skill.svg}
           {skill.name}
         </ButtonContainer>
