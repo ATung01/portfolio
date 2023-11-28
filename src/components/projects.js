@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Element } from "react-scroll"
 
 const Wrapper = styled.div`
-height: 1000px;
+height: 1100px;
 h2 {
   font-size: 2rem;
   color: ${props => props.theme.primary};
@@ -100,7 +100,6 @@ function Projects() {
           <a href="https://alextung.netlify.app/">This website!</a>
           <p>This website was made from scratch with no prebuilt components. Used React and Styled Components heavily.</p>
         </ReverseCard>
-
       </Container>
     </Wrapper>
   )
