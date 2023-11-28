@@ -97,7 +97,7 @@ function Projects() {
           <p>Capstone project from Flatiron School. Think of Pictionary in real time with an AI element. Made with React front with a Ruby backend. Currently down.</p>
         </Card>
         <ReverseCard>
-          <a href="https://alextung.netlify.app/">This website!</a>
+          <a href="https://alextung.dev/">This website!</a>
           <p>This website was made from scratch with no prebuilt components. Used React and Styled Components heavily.</p>
         </ReverseCard>
       </Container>
