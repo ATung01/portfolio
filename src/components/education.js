@@ -15,7 +15,6 @@ h2 {
 
 const Container = styled.div`
 height: 80%;
-// width: 100%;
 display: grid;
 grid-template-columns: repeat(5, 1fr);
 grid-template-rows: repeat(5, 1fr);
@@ -35,7 +34,6 @@ justify-content: end;
 const CardOne = styled.div`
 height: 300px;
 width: 300px;
-// border: solid 2px red;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -52,7 +50,6 @@ img {
 const CardTwo = styled.div`
 height: 300px;
 width: 300px;
-// border: solid 2px red;
 display: flex;
 justify-content: center;
 align-items: center;

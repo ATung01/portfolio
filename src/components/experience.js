@@ -60,6 +60,9 @@ margin-top: -20px;
 const Spacer = styled.div`
 height: 200px;
 `
+const SmallerSpacer = styled.div`
+height: 100px;
+`
 
 function Experience() {
 
@@ -70,12 +73,12 @@ function Experience() {
         </div>
       </Element>
       <h2>Experience</h2>
-      <Spacer></Spacer>
+      <SmallerSpacer></SmallerSpacer>
       <div className="container">
         <Card>
           <Title>Digidems - Digital Consultant / Web Developer</Title>
           <Content>
-            - Nationally visible Congressional campaign{'\n'}
+            - Nationally visible Congressional campaign.{'\n'}
             - Advised on, developed, and deployed campaign website.{'\n'}
             - Created and customized small programs based on need.{'\n'}
             - Developed and implemented cyber security plan.{'\n'}  
