@@ -52,6 +52,7 @@ p {
   // min-width: 150px;
   width:200px;
   margin-top: 5rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
