@@ -1,6 +1,8 @@
 import React from 'react'
 import Headshot from './images/Headshot.jpg'
 import styled from 'styled-components'
+import { Element } from "react-scroll"
+
 
 const Hero = styled.div`
 width:100%;
@@ -79,6 +81,10 @@ function Profile () {
   
   return (
     <Hero className="profile">
+      <Element name="about">
+        <div id="about"> 
+        </div>
+      </Element>
       <div className='profileContainer'>
         <div className='intro'>
           <h1>Hey, I'm Alex Tung</h1>

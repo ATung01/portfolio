@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Element } from "react-scroll"
 
 const Wrapper = styled.div`
 height: 900px;
@@ -66,6 +67,10 @@ img {
 function Education() {
   return (
     <Wrapper>
+      <Element name="education">
+        <div id="education"> 
+        </div>
+      </Element>
       <h2>Education</h2>
       <Container>
         <CardWrapperOne>

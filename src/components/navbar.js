@@ -2,9 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import Logo from './images/Logo.svg'
 import NavButton from './navButton'
+import { Link } from 'react-scroll'
 import { useMediaQuery } from 'react-responsive'
 
-
+const Wrapper = styled.div`
+position: sticky;
+top: 0px;
+background: black;
+z-index: 1;
+`
 
 const Nav = styled.div`
 color: white;
@@ -55,7 +61,7 @@ function Navbar() {
   const isNonMobile = useMediaQuery({ minWidth: 768})
   
   return(
-    <div>
+    <Wrapper>
       <LogoContainer>
         <img src={Logo} alt='Logo' />
       </LogoContainer>
@@ -63,13 +69,15 @@ function Navbar() {
           <ul>
             {Links.map((link, index) => (
               <li key={link} className="siteLinks">
-                <a href={`/${link.toLowerCase()}`}>{link}</a>
+                <Link to={link.toLowerCase()} smooth={true} duration={500} offset={-75}>
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>
          </Nav>}
       {!isNonMobile && <NavButton links={Links}/>}
-    </div>
+    </Wrapper>
   );
 }
 export default Navbar

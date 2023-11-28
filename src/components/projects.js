@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Element } from "react-scroll"
 
 const Wrapper = styled.div`
 height: 1000px;
@@ -9,7 +10,10 @@ h2 {
   text-align: center;
 }
 @media (max-width: 768px) {
-  height: 1600px;  
+  height: 1200px;  
+}
+@media (max-width: 500px) {
+  height: 1600px;
 }
 `
 
@@ -70,6 +74,10 @@ p{
 function Projects() {
   return (
     <Wrapper>
+      <Element name="projects">
+        <div id="projects"> 
+        </div>
+      </Element>
       <h2>Cool Stuff I've Made</h2>
       <Container>
         <Card>

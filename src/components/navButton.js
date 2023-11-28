@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Link } from 'react-scroll'
+
 
 const Button = styled.div`
 `
@@ -69,7 +71,9 @@ function NavButton({links}) {
             <Menu>
               {links.map((link, index) => (
                 <li key={link} >
-                  <a href={`/${link.toLowerCase()}`}>{link}</a>
+                  <Link to={link.toLowerCase()} smooth={true} duration={500} offset={-75}>
+                    {link}
+                  </Link>
                 </li>
               ))}
             </Menu>

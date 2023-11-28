@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Card from "./card";
 import IconButton from "./iconButton";
 import { ListofSkills } from "./data";
+import { Element } from "react-scroll"
+
 
 const Wrapper = styled.div`
 clip-path: polygon(0 100%, 0 18%, 74% 0, 100% 8%, 100% 100%);
@@ -59,6 +61,10 @@ function Skills() {
   return (
     <div>
       <Wrapper>
+      <Element name="skills">
+        <div id="skills"> 
+        </div>
+      </Element>
         <Container>
           <SkillsText>Skills</SkillsText>
         </Container>
