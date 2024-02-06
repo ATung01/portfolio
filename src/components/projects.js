@@ -81,7 +81,7 @@ function Projects() {
       <h2>Cool Stuff I've Made</h2>
       <Container>
         <Card>
-          <a href="https://colinallred.com/">Colin Allred</a>
+          <a href="https://colinallred.com/">Colin Allred Campaign</a>
           <img src="https://colinallred.com/wp-content/uploads/sites/272/popup-image.jpg" alt="Colin Allred"></img>
           <p>Website developed and deployed with React/Heroku/Wix. Was a digital consultant
             on this congressional campaign, that we won!</p>
